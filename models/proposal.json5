@@ -1,0 +1,62 @@
+{
+  // [Data Type] Comment
+  "protocolVersion": 1, // [Integer] Version of the open-proposal-standard
+  "title": "A very cool proposal", // [String] Name of your proposal (max 70 chars)
+  "round": 12, // [Integer] Number of funding round
+  "walletAddress": {
+    "network": "ethereum", // [String||Constraints>Networks] Network of the wallet
+    "address": "0xe6e3459ba0d70699f54464cc4b5d273810e7ec7b" // [String] Hex address of the wallet
+  },
+  "requestedFunding": 10500.50, // [Integer||Float] Amount of requested funding in USD
+  "category": "outreach", // [Constraints>Categories] Proposal category
+  "oneLiner": "Describe your proposal in one sentence", // [String] Short description (max 80 chars)
+  "description": "Detailed description of your proposal...", // [String||Markdown] Detailed description (max 3072 chars)
+  "deliverables": [
+    {
+      "goal": "1a", // [String] TODO: TBD
+      "deliverable": "Documentation", // [String] TODO: TBD
+      "specification": "Put into wiki...", // [String||Markdown] TODO: TBD
+      "percentage": 0.8, // [Float] Work state of the deliverable (range 0.1-1.0)
+    },
+  ],
+  "finalProduct": "We want to establish...", // [String||Markdown] Describe final product (max 3072 chars)
+  "valueAdded": {
+    "tokenUsage": "Due to several...", // [String||Markdown] How well might the project drive usage of the token
+    "viability": "Our estimated...", // [String||Markdown] What is the change of success of the project
+    "community": "Our team is really soph...", // [String||Markdown] How active is the team in the community
+    "ecosystem": "We will...", // [String||Markdown] Adding value to the overall community / ecosystem
+  },
+  "receivedGrant": true, // [Boolean] Any received grants in the past
+  "details": "details...", // [String||Markdown] TODO: What is this?
+  "information": { // TODO: this section might be too restricted
+    "link": "", // TODO: can be obtained by links tag
+    "openSource": false, // [Boolean]
+    "license": "MIT", // [String] License or explanation
+    "sourcecode": "https://github.com/xxx", // [String] Link to project software / repository
+  },
+  "outreach": {
+    "medium": "podcast", // [String||OutreachMedium] Select medium to outreach
+    podcast: {
+      amount: 10, // [Integer] Number of podcast to publish
+      target: "https://spotify.com/xxx", // [String] Link to streaming platform
+    },
+    "custom": "Get funky...", // [String] Custom outreach explanation
+  },
+  "dataMarket": "Ocean Market", // [String] Where will data be published
+  "contribute": {
+    "repository": "Aquarius", // [String] Declare on which components will be worked
+    "bestPractices": true, // [Boolean] Follow software quality best practices
+  },
+  "commitCollaboration": true, // [Boolean] Collaborate closely with DAO
+  "commitDAOImproving": true, // [Boolean] Publish any DAO improved tooling
+  "mockups": "https://figma.com/xxx", // [String] Link to Mockup or designs TODO: image upload?
+  "techStack": "We will use...", // [String] Overview of the technology stack
+  "communityEngagement": "Interact with the community...", // [String] Which channels and for how long
+  "publishedDataAssets": "did1, did2", // [String] Already published data assets
+  "roadmap": {
+    "past": "We already finished...", // [String||Markdown] Any prior work completed thus far
+    "future": "Bullet Points", // [String||Markdown] Project roadmap, milestones
+    "enhance": "Bullet Points", // [String||Markdown] Future plans and intentions
+  },
+  "additionalInformation": "0-4 paragraphs", // [String||Markdown] Custom fields, images other grants
+}

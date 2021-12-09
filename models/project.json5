@@ -1,0 +1,22 @@
+{
+  // [Data Type] Comment
+  "protocolVersion": 1, // [Integer] Version of the open-proposal-standard
+  "oneLiner": "Describe your project in one sentence", // [String] Short description (max 80 chars)
+  "description": "Detailed description of your project...", // [String] Detailed project description (max 2048 chars)
+  "category": "dao", // [String||Constraints>ProjectCategory] // Project category
+  "links": {
+    "<target>": "https://target.tld" // [String||Constraints>Links] Object containing links to target websites
+  },
+  "team": [
+    {
+      "name": "Max Mastermind", // [String] Name / Pseudonym
+      "role": "Senior Engineer", // [String] Member role
+      "affiliation": "advisor", // [String||MemberAffiliation] Team member status
+      "links": {
+        "<target>": "https://target.tld" // [String||Constraints>Links] Object containing links to target websites
+      },
+      "background": "CTO of Pearl", // [String] Background / work experience
+    }
+  ],
+  "proposals": [] // [Array[Proposal]] Array of proposals. See proposal structure
+}
