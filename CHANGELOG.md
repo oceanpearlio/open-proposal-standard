@@ -6,5 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Proposal and Project model definition
+- Data-Types definition
+- Enumeration types
 - README to provide basic information about the project
 - CHANGELOG for tracking changes on newer versions
