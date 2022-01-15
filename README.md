@@ -14,6 +14,8 @@ Ocean Pearl wants to introduce a standardized data structure for sharing proposa
 ## Models
 This standard follows the approach that one project can have multiple grant proposals in total (1 to n relation).
 Per funding round only one proposal is allowed for every project.
+
+The relationship between project and proposal is based on the provided wallet-address. A specific wallet-address can only be claimed by one project (1 to 1 relation).
 - [project](models/project.json5)
 - [proposal](models/proposal.json5)
 

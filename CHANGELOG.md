@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Explanation between project and proposal relation
 - Proposal and Project model definition
 - Data-Types definition
 - Enumeration types
