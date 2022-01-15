@@ -13,11 +13,14 @@
   "description": "Detailed description of your proposal...", // [String||Markdown] Detailed description (max 3072 chars)
   "deliverables": [
     {
-      "goal": "1a", // [String] TODO: TBD
-      "deliverable": "Documentation", // [String] TODO: TBD
-      "specification": "Put into wiki...", // [String||Markdown] TODO: TBD
-      "percentage": 0.8, // [Float] Work state of the deliverable (range 0.1-1.0)
-    },
+      "description": "Put into wiki...", // [String] Describe your deliverable (max 500 chars)
+      "subGoals": [
+        {
+          "description": "URL or App Store link...", // [String] Describe your sub goal (max 500 chars)
+          "status": "inProgress", // [Constraints>DeliverableStatus] Status of the deliverable
+        }
+      ]
+    }
   ],
   "finalProduct": "We want to establish...", // [String||Markdown] Describe final product (max 3072 chars)
   "valueAdded": {
