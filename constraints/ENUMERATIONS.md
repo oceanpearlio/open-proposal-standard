@@ -29,13 +29,12 @@ TBD
 - planned
 
 ### ProposalCategory
-- other
-- buildAndIntegrate
-- coreSoftware
+- defi
 - dao
-- newEntrants
-- outreach
+- buildAndIntegrate
 - unleashData
+- outreach
+- other
 
 ### MemberAffiliation <kbd>extensible</kbd>
 - core
