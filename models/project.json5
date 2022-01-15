@@ -17,7 +17,7 @@
     {
       "name": "Max Mastermind", // [String] Name / Pseudonym
       "role": "Senior Engineer", // [String] Member role
-      "affiliation": "advisor", // [String||MemberAffiliation] Team member status
+      "affiliation": "advisor", // [String||Constraints>MemberAffiliation] Team member status
       "links": {
         "<target>": "https://target.tld" // [String||Constraints>Links] Object containing links to target websites
       },

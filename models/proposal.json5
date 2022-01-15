@@ -7,7 +7,6 @@
     "network": "ethereum", // [String||Constraints>Networks] Network of the wallet
     "address": "0xe6e3459ba0d70699f54464cc4b5d273810e7ec7b" // [String] Hex address of the wallet
   },
-  "requestedFunding": 10500.50, // [Integer||Float] Amount of requested funding in USD
   "category": "outreach", // [Constraints>Categories] Proposal category
   "oneLiner": "Describe your proposal in one sentence", // [String] Short description (max 80 chars)
   "description": "Detailed description of your proposal...", // [String||Markdown] Detailed description (max 3072 chars)
@@ -29,7 +28,22 @@
     "community": "Our team is really soph...", // [String||Markdown] How active is the team in the community
     "ecosystem": "We will...", // [String||Markdown] Adding value to the overall community / ecosystem
   },
+  "links": {
+    "<target>": "https://target.tld" // [String||Constraints>Links] Object containing links to target websites
+  },
+  "team": [
+    {
+      "name": "Max Mastermind", // [String] Name / Pseudonym
+      "role": "Senior Engineer", // [String] Member role
+      "affiliation": "advisor", // [String||Constraints>MemberAffiliation] Team member status
+      "links": {
+        "<target>": "https://target.tld" // [String||Constraints>Links] Object containing links to target websites
+      },
+      "background": "CTO of Pearl", // [String] Background / work experience
+    }
+  ],
   "receivedGrant": true, // [Boolean] Any received grants in the past
+  "requestedFunding": 10500.50, // [Integer||Float] Amount of requested funding in USD
   "details": "details...", // [String||Markdown] TODO: What is this?
   "information": { // TODO: this section might be too restricted
     "link": "", // TODO: can be obtained by links tag
