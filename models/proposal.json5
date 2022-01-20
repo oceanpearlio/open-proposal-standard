@@ -9,7 +9,7 @@
   },
   "category": "outreach", // [Constraints>Categories] Proposal category
   "oneLiner": "Describe your proposal in one sentence", // [String] Short description (max 128 chars)
-  "description": "Detailed description of your proposal...", // [String||Markdown] Detailed description (max 3072 chars)
+  "summary": "Short summary of your proposal", // [String||Markdown] One paragraph summary (max 256 chars)
   "deliverables": [
     {
       "description": "Put into wiki...", // [String] Describe your deliverable (max 1024 chars)
@@ -45,7 +45,7 @@
   ],
   "receivedGrant": true, // [Boolean] Any received grants in the past
   "requestedFunding": 10500.50, // [Integer||Float] Amount of requested funding in USD
-  "details": "details...", // [String||Markdown] TODO: What is this?
+  "details": "Long description of your proposal", // [String||Markdown] Detailed description (max chars 3072 chars)
   "information": { // TODO: this section might be too restricted
     "link": "", // TODO: can be obtained by links tag
     "openSource": false, // [Boolean]
