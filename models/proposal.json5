@@ -12,11 +12,11 @@
   "description": "Detailed description of your proposal...", // [String||Markdown] Detailed description (max 3072 chars)
   "deliverables": [
     {
-      "description": "Put into wiki...", // [String] Describe your deliverable (max 500 chars)
+      "description": "Put into wiki...", // [String] Describe your deliverable (max 1024 chars)
       "completed": true, // [Boolean] Is this task finished? (All sub goals needs to be true to set true for this)
-      "subGoals": [
+      "subDeliverables": [
         {
-          "description": "URL or App Store link...", // [String] Describe your sub goal (max 500 chars)
+          "description": "URL or App Store link...", // [String] Describe your sub goal (max 1024 chars)
           "completed": true, // [Boolean] Is this task finished?
         }
       ]
