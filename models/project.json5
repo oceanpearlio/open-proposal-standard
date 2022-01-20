@@ -1,6 +1,7 @@
 {
   // [Data Type] Comment
   "protocolVersion": 1, // [Integer] Version of the open-proposal-standard
+  "name": "Data Boys", // [String] Project name (max 64 chars)
   "oneLiner": "Describe your project in one sentence", // [String] Short description (max 128 chars)
   "description": "Detailed description of your project...", // [String] Detailed project description (max 2048 chars)
   "category": "dao", // [String||Constraints>ProjectCategory] // Project category
