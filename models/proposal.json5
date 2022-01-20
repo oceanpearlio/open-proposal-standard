@@ -13,10 +13,11 @@
   "deliverables": [
     {
       "description": "Put into wiki...", // [String] Describe your deliverable (max 500 chars)
+      "completed": true, // [Boolean] Is this task finished? (All sub goals needs to be true to set true for this)
       "subGoals": [
         {
           "description": "URL or App Store link...", // [String] Describe your sub goal (max 500 chars)
-          "status": "inProgress", // [Constraints>DeliverableStatus] Status of the deliverable
+          "completed": true, // [Boolean] Is this task finished?
         }
       ]
     }

@@ -23,11 +23,6 @@ Ocean Pearl guarantees to support the listed values in this standard. Other valu
 ### ProjectCategory
 TBD
 
-### DeliverableStatus
-- finished
-- inProgress
-- planned
-
 ### ProposalCategory
 - defi
 - dao
