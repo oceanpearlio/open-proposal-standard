@@ -5,6 +5,7 @@ Open standard which provides a unified structure for the exchange of grant propo
 
 ## Background
 Ocean Pearl wants to introduce a standardized data structure for sharing proposals and projects between third party systems.
+The basis for the design is the [OceanDAO Grant Proposal Template](https://github.com/oceanprotocol/oceandao/wiki/Grant-Proposal-Template).
 
 ## Fundamentals
 - Data structure is based on json objects (see [RFC 8259](https://tools.ietf.org/pdf/rfc8259.pdf))
