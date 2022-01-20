@@ -18,7 +18,6 @@ Ocean Pearl guarantees to support the listed values in this standard. Other valu
 
 ### Networks
 - ethereum
-- polygon
 
 ### ProjectCategory
 TBD
