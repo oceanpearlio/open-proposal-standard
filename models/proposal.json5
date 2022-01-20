@@ -1,7 +1,7 @@
 {
   // [Data Type] Comment
   "protocolVersion": 1, // [Integer] Version of the open-proposal-standard
-  "title": "A very cool proposal", // [String] Name of your proposal (max 70 chars)
+  "title": "A very cool proposal", // [String] Name of your proposal (max 128 chars)
   "round": 12, // [Integer] Number of funding round
   "walletAddress": {
     "network": "ethereum", // [String||Constraints>Networks] Network of the wallet
