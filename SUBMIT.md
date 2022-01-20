@@ -1,7 +1,7 @@
 # Submit your proposal via the decentralized channel
 
 ### Signing
-Prerequisites: Completed proposal object. See [models/proposal](models/project.json5).
+Prerequisites: Completed proposal object. See [models/proposal](models/proposal.json5).
 - The proposal object must be hashed with [SHA-256](http://www.webtoolkit.info/javascript-sha256.html)
 - The signature must be created with a Web3 compatible wallet using the [Ethereum standard](https://eips.ethereum.org/EIPS/eip-712#:~:text=The%20sign%20method%20calculates%20an,as%20an%20Ethereum%20specific%20signature.) for message signing
 
