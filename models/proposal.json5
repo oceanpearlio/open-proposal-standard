@@ -40,7 +40,8 @@
       "background": "CTO of Pearl", // [String] Background / work experience
     }
   ],
-  "receivedGrant": true, // [Boolean] Any received grants in the past
+  "previouslyReceivedGrant": true, // [Boolean] Any received grants in the past
+  "previouslyReceivedGrantDetails": "Round 6,7; Project XYZ", // [String] List previous grants (max 512 chars)
   "requestedFunding": 10500.50, // [Integer||Float] Amount of requested funding in USD
   "details": "Long description of your proposal", // [String||Markdown] Detailed description (max chars 4096 chars)
   "information": { // TODO: this section might be too restricted
