@@ -31,13 +31,14 @@
   },
   "team": [
     {
-      "name": "Max Mastermind", // [String] Name / Pseudonym
-      "role": "Senior Engineer", // [String] Member role
+      "name": "Max Mastermind", // [String] Name / Pseudonym (max 64 chars)
+      "role": ["Senior Engineer", "Designer"], // [Array[String]] List member roles (max 3 entries, max 64 chars per entry)
       "affiliation": "advisor", // [String||Constraints>MemberAffiliation] Team member status
-      "links": {
+      "linksAndContact": {
         "<target>": "https://target.tld" // [String||Constraints>Links] Object containing links to target websites
       },
-      "background": "CTO of Pearl", // [String] Background / work experience
+      "country": "Germany", // [String] Country of residence (max 64 chars)
+      "background": "CTO of Pearl", // [String||Markdown] Background / work experience (max 512 chars)
     }
   ],
   "previouslyReceivedGrant": true, // [Boolean] Any received grants in the past

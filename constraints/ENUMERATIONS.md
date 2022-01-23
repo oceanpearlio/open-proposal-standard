@@ -15,6 +15,7 @@ Ocean Pearl guarantees to support the listed values in this standard. Other valu
 - discord
 - youtube
 - medium
+- mail
 
 ### Networks
 - ethereum
@@ -36,7 +37,8 @@ TBD
 - general
 
 ### MemberAffiliation <kbd>extensible</kbd>
-- core
+- projectLead
+- coreMember
 - advisor
 
 ### OutreachMedium <kbd>extensible</kbd>
