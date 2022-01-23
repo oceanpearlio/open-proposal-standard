@@ -29,6 +29,12 @@ TBD
 - outreach
 - unleashData
 
+### GrantPoolCategory (formerly EarmarkType)
+- newOutreach
+- newEntrants
+- coreTech
+- general
+
 ### MemberAffiliation <kbd>extensible</kbd>
 - core
 - advisor

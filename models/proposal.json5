@@ -8,6 +8,7 @@
     "address": "0xe6e3459ba0d70699f54464cc4b5d273810e7ec7b" // [String] Hex address of the wallet
   },
   "category": "outreach", // [Constraints>Categories] Proposal category
+  "grantPool": "general", // [Constraints>GrantPoolCategory] For which funding pool are you applying? (formerly Earmark)
   "oneLiner": "Describe your proposal in one sentence", // [String] Short description (max 128 chars)
   "summary": "Short summary of your proposal", // [String||Markdown] One paragraph summary (max 256 chars)
   "deliverables": [
