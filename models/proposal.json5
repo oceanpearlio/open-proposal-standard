@@ -9,6 +9,7 @@
   },
   "category": "outreach", // [Constraints>Categories] Proposal category
   "grantPool": "general", // [Constraints>GrantPoolCategory] For which funding pool are you applying? (formerly Earmark)
+  "grantPoolApplicationInfo": "Approved Initiatives: ...", // [String] For core tech approved initiatives (max 256 chars)
   "oneLiner": "Describe your proposal in one sentence", // [String] Short description (max 128 chars)
   "summary": "Short summary of your proposal", // [String||Markdown] One paragraph summary (max 256 chars)
   "deliverables": [
@@ -23,7 +24,7 @@
       ]
     }
   ],
-  "finalProduct": "We want to establish...", // [String||Markdown] Describe final product (max 3072 chars)
+  "finalProduct": "We want to establish...", // [String||Markdown] Describe final product (max 4096 chars)
   "valueAdded": {
     "tokenUsage": "Due to several...", // [String||Markdown] How well might the project drive usage of the token
     "viability": "Our estimated...", // [String||Markdown] What is the change of success of the project
@@ -46,7 +47,7 @@
   ],
   "receivedGrant": true, // [Boolean] Any received grants in the past
   "requestedFunding": 10500.50, // [Integer||Float] Amount of requested funding in USD
-  "details": "Long description of your proposal", // [String||Markdown] Detailed description (max chars 3072 chars)
+  "details": "Long description of your proposal", // [String||Markdown] Detailed description (max chars 4096 chars)
   "information": { // TODO: this section might be too restricted
     "link": "", // TODO: can be obtained by links tag
     "openSource": false, // [Boolean]
