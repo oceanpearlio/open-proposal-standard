@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Submit process via decentralized channel
 - Explanation between project and proposal relation
 - Proposal and Project model definition
 - Data-Types definition

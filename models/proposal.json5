@@ -45,35 +45,48 @@
   "previouslyReceivedGrantDetails": "Round 6,7; Project XYZ", // [String] List previous grants (max 512 chars)
   "requestedFunding": 10500.50, // [Integer||Float] Amount of requested funding in USD
   "details": "Long description of your proposal", // [String||Markdown] Detailed description (max chars 4096 chars)
-  "information": { // TODO: this section might be too restricted
-    "link": "", // TODO: can be obtained by links tag
-    "openSource": false, // [Boolean]
-    "license": "MIT", // [String] License or explanation
-    "sourcecode": "https://github.com/xxx", // [String] Link to project software / repository
-  },
-  "outreach": {
-    "medium": "podcast", // [String||OutreachMedium] Select medium to outreach
-    podcast: {
-      amount: 10, // [Integer] Number of podcast to publish
-      target: "https://spotify.com/xxx", // [String] Link to streaming platform
+  "proposalDependentDetails": { // Provide specific details for every matching condition
+    "buildAndIntegrate": {
+      "link": "URL or app store", // [String||Markdown]
+      "openSource": true, // [Boolean]
+      "openSourceExplainer": "Cannot be open sourced because of xyz", // [String] If not open source specify why
+      "license": "MIT", // [String] Software license
+      "sourceCode": "https://github.com/xxx", // [String] Link to project software / repository
     },
-    "custom": "Get funky...", // [String] Custom outreach explanation
+    "outreach": [
+      {
+        "medium": "podcast", // [String||Constraints>OutreachMedium] Select medium to outreach
+        "amount": 10, // [Integer] Number of outreach media to publish
+        "target": ["https://spotify.com/xyz", "https://youtube.com/xyz"], // [Array[String]] Links to streaming platform
+      }
+    ],
+    "unleashData": {
+      "dataMarket": "Ocean Market", // [String||Markdown] Which Ocean-powered data market will data be published on? (max chars 256)
+    },
+    "coreSoftware": {
+      "oceanComponents": ["Aquarius", "Provider"], // [String] Specify on which ocean components will be worked on
+      "collaborationConsent": true, // [Boolean] We commit to working with Ocean core developers to merging the PR, following software quality best practices
+    },
+    "dao": {
+      "collaborationConsent": true, // [Boolean] We commit to collaborating closely with OceanDAO core team
+      "publishConsent": true, // [Boolean] We commit to making all improved DAO tools publicly available
+    },
+    "proposalIncludesSoftware": {
+      "mockupsAndDesigns": "Link to xyz", // [String||Markdown] Are there any mockups or designs to date? If yes, please share details / links. (max 4096 chars)
+      "techStack": "Nuxt.js, NestJS", // [String||Markdown] Please given an overview of the technology stack. (max 1024 chars)
+    },
+    "includesCommunityEngagement": {
+      "details": "Twitter for 8 weeks", // [String||Markdown] Which channels will be used? For how long? Other details? (max chars 2048)
+    },
+    "alreadyPublishedDataAssets": {
+      "dids": ["did1", "did2"], // [Array[String]] Provide DIDs if the project has already published data assets
+    },
   },
-  "dataMarket": "Ocean Market", // [String] Where will data be published
-  "contribute": {
-    "repository": "Aquarius", // [String] Declare on which components will be worked
-    "bestPractices": true, // [Boolean] Follow software quality best practices
-  },
-  "commitCollaboration": true, // [Boolean] Collaborate closely with DAO
-  "commitDAOImproving": true, // [Boolean] Publish any DAO improved tooling
-  "mockups": "https://figma.com/xxx", // [String] Link to Mockup or designs TODO: image upload?
-  "techStack": "We will use...", // [String] Overview of the technology stack
-  "communityEngagement": "Interact with the community...", // [String] Which channels and for how long
-  "publishedDataAssets": "did1, did2", // [String] Already published data assets
-  "roadmap": {
-    "past": "We already finished...", // [String||Markdown] Any prior work completed thus far
-    "future": "Bullet Points", // [String||Markdown] Project roadmap, milestones
-    "enhance": "Bullet Points", // [String||Markdown] Future plans and intentions
-  },
-  "additionalInformation": "0-4 paragraphs", // [String||Markdown] Custom fields, images other grants
+  "roadmap": [
+    {
+      "date": "2023-12-24", // <Optional>[String||Date] Specify when you plan to achieve this milestone
+      "milestoneDetails": "Bullet points...", // [String||Markdown] Short milestone explanation (max chars 1024)
+    }
+  ],
+  "additionalInformation": "0-4 paragraphs", // [String||Markdown] Custom fields, images other grants (max 4096 chars)
 }
