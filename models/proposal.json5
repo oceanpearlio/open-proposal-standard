@@ -25,12 +25,7 @@
     }
   ],
   "finalProduct": "We want to establish...", // [String||Markdown] Describe final product (max 4096 chars)
-  "valueAdded": {
-    "tokenUsage": "Due to several...", // [String||Markdown] How well might the project drive usage of the token
-    "viability": "Our estimated...", // [String||Markdown] What is the change of success of the project
-    "community": "Our team is really soph...", // [String||Markdown] How active is the team in the community
-    "ecosystem": "We will...", // [String||Markdown] Adding value to the overall community / ecosystem
-  },
+  "valueAdded": "Adding value to the overall community", // [String||Markdown] How will your project provide value? (max chars 4096)
   "links": {
     "<target>": "https://target.tld" // [String||Constraints>Links] Object containing links to target websites
   },
