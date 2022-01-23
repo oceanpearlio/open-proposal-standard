@@ -9,14 +9,14 @@
   },
   "category": "outreach", // [Constraints>Categories] Proposal category
   "grantPool": "general", // [Constraints>GrantPoolCategory] For which funding pool are you applying? (formerly Earmark)
-  "grantPoolApplicationInfo": "Approved Initiatives: ...", // [String] For core tech approved initiatives (max 256 chars)
+  "grantPoolApplicationInfo": "Approved Initiatives: ...", // <Optional, Required for coreSoftware category>[String] Approved initiatives (max 256 chars)
   "oneLiner": "Describe your proposal in one sentence", // [String] Short description (max 128 chars)
   "summary": "Short summary of your proposal", // [String||Markdown] One paragraph summary (max 256 chars)
-  "deliverables": [
+  "deliverables": [ // Specify at least one deliverable
     {
       "description": "Put into wiki...", // [String||Markdown] Describe your deliverable (max 1024 chars)
       "completed": true, // [Boolean] Is this task finished? (All sub goals needs to be true to set true for this)
-      "subDeliverables": [
+      "subDeliverables": [ // <Optional>
         {
           "description": "URL or App Store link...", // [String||Markdown] Describe your sub goal (max 1024 chars)
           "completed": true, // [Boolean] Is this task finished?
@@ -26,67 +26,67 @@
   ],
   "finalProduct": "We want to establish...", // [String||Markdown] Describe final product (max 4096 chars)
   "valueAdded": "Adding value to the overall community", // [String||Markdown] How will your project provide value? (max chars 4096)
-  "links": {
+  "links": { // <Optional>
     "<target>": "https://target.tld" // [String||Constraints>Links] Object containing links to target websites
   },
-  "team": [
+  "team": [ // Specify at least one, a project lead must be specified. See affiliation property
     {
       "name": "Max Mastermind", // [String] Name / Pseudonym (max 64 chars)
       "role": ["Senior Engineer", "Designer"], // [Array[String]] List member roles (max 3 entries, max 64 chars per entry)
       "affiliation": "advisor", // [String||Constraints>MemberAffiliation] Team member status
-      "linksAndContact": {
+      "linksAndContact": { // <Optional>
         "<target>": "https://target.tld" // [String||Constraints>Links] Object containing links to target websites
       },
       "country": "Germany", // [String] Country of residence (max 64 chars)
-      "background": "CTO of Pearl", // [String||Markdown] Background / work experience (max 512 chars)
+      "background": "CTO of Pearl", // <Optional>[String||Markdown] Background / work experience (max 512 chars)
     }
   ],
   "previouslyReceivedGrant": true, // [Boolean] Any received grants in the past
-  "previouslyReceivedGrantDetails": "Round 6,7; Project XYZ", // [String] List previous grants (max 512 chars)
+  "previouslyReceivedGrantDetails": "Round 6,7; Project XYZ", // <Optional, Required if previouslyReceivedGrant is true>[String] List previous grants (max 512 chars)
   "requestedFunding": 10500.50, // [Integer||Float] Amount of requested funding in USD
   "details": "Long description of your proposal", // [String||Markdown] Detailed description (max chars 4096 chars)
-  "proposalDependentDetails": { // Provide specific details for every matching condition
-    "buildAndIntegrate": {
+  "proposalDependentDetails": {
+    "buildAndIntegrate": { // Required if category is buildAndIntegrate
       "link": "URL or app store", // [String||Markdown]
       "openSource": true, // [Boolean]
-      "openSourceExplainer": "Cannot be open sourced because of xyz", // [String] If not open source specify why
+      "openSourceExplainer": "Cannot be open sourced because of xyz", // <Optional, Required if openSource is false>[String] If not open source specify why
       "license": "MIT", // [String] Software license
-      "sourceCode": "https://github.com/xxx", // [String] Link to project software / repository
+      "sourceCode": "https://github.com/xxx", // <Optional>[String] Link to project software / repository
     },
-    "outreach": [
+    "outreach": [ // Required if category is outreach. Specify at least one medium
       {
         "medium": "podcast", // [String||Constraints>OutreachMedium] Select medium to outreach
         "amount": 10, // [Integer] Number of outreach media to publish
         "target": ["https://spotify.com/xyz", "https://youtube.com/xyz"], // [Array[String]] Links to streaming platform
       }
     ],
-    "unleashData": {
+    "unleashData": { // Required if category is unleashData
       "dataMarket": "Ocean Market", // [String||Markdown] Which Ocean-powered data market will data be published on? (max chars 256)
     },
-    "coreSoftware": {
+    "coreSoftware": { // Required if category is coreSoftware
       "oceanComponents": ["Aquarius", "Provider"], // [String] Specify on which ocean components will be worked on
       "collaborationConsent": true, // [Boolean] We commit to working with Ocean core developers to merging the PR, following software quality best practices
     },
-    "dao": {
+    "dao": { // Required if category is dao
       "collaborationConsent": true, // [Boolean] We commit to collaborating closely with OceanDAO core team
       "publishConsent": true, // [Boolean] We commit to making all improved DAO tools publicly available
     },
-    "proposalIncludesSoftware": {
-      "mockupsAndDesigns": "Link to xyz", // [String||Markdown] Are there any mockups or designs to date? If yes, please share details / links. (max 4096 chars)
+    "proposalIncludesSoftware": { // Required if project includes software
+      "mockupsAndDesigns": "Link to xyz", // <Optional>[String||Markdown] Are there any mockups or designs to date? If yes, please share details / links. (max 4096 chars)
       "techStack": "Nuxt.js, NestJS", // [String||Markdown] Please given an overview of the technology stack. (max 1024 chars)
     },
-    "includesCommunityEngagement": {
+    "includesCommunityEngagement": { // Required if project includes community engagement
       "details": "Twitter for 8 weeks", // [String||Markdown] Which channels will be used? For how long? Other details? (max chars 2048)
     },
-    "alreadyPublishedDataAssets": {
+    "alreadyPublishedDataAssets": { // Required if project published data assets previously
       "dids": ["did1", "did2"], // [Array[String]] Provide DIDs if the project has already published data assets
     },
   },
-  "roadmap": [
+  "roadmap": [ // <Optional>
     {
       "date": "2023-12-24", // <Optional>[String||Date] Specify when you plan to achieve this milestone
       "milestoneDetails": "Bullet points...", // [String||Markdown] Short milestone explanation (max chars 1024)
     }
   ],
-  "additionalInformation": "0-4 paragraphs", // [String||Markdown] Custom fields, images other grants (max 4096 chars)
+  "additionalInformation": "0-4 paragraphs", // <Optional>[String||Markdown] Custom fields, images other grants (max 4096 chars)
 }
