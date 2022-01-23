@@ -23,12 +23,11 @@ Ocean Pearl guarantees to support the listed values in this standard. Other valu
 TBD
 
 ### ProposalCategory
-- defi
-- dao
 - buildAndIntegrate
-- unleashData
+- coreSoftware
+- dao
 - outreach
-- other
+- unleashData
 
 ### MemberAffiliation <kbd>extensible</kbd>
 - core
