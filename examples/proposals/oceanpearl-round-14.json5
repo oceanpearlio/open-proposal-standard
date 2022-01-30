@@ -1,0 +1,112 @@
+{
+  // [Data Type] Comment
+  "protocolVersion": 1, // [Integer] Version of the open-proposal-standard
+  "title": "OceanPearl: Ocean Ecosystem Project Tracker", // [String] Name of your proposal (max 128 chars)
+  "round": 12, // [Integer] Number of funding round you are applying to
+  "walletAddress": {
+    "network": "ethereum", // [String||Constraints>Networks] Network of the wallet
+    "address": "0xe6E3459bA0d70699F54464cc4b5d273810E7EC7B" // [String] Hex address of the wallet
+  },
+  "category": "dao", // [Constraints>Categories] Proposal category
+  "grantPool": "general", // [Constraints>GrantPoolCategory] For which funding pool are you applying? (formerly Earmark)
+  "oneLiner": "We will redefine the current way proposals are submitted by creating a user-friendly process directly on Ocean Pearl.", // [String] Short description (max 128 chars)
+  "summary": "Ocean Pearl aims to aggregate all Ocean Protocol content and resources onto one platform, which will listed on oceanpearl.io", // [String||Markdown] One paragraph summary (max 256 chars)
+  "deliverables": [ // Specify at least one deliverable
+    {
+      "description": "Put into wiki...", // [String||Markdown] Describe your deliverable (max 1024 chars)
+      "completed": true, // [Boolean] Is this task finished? (All sub goals needs to be true to set true for this)
+      "subDeliverables": [ // <Optional>
+        {
+          "description": "URL or App Store link...", // [String||Markdown] Describe your sub goal (max 1024 chars)
+          "completed": true, // [Boolean] Is this task finished?
+        }
+      ]
+    }
+  ],
+  "finalProduct": "Track projects to make sure the funds are used in the best possible way\nReward projects that are legit and delivering on their promises\nIdentify malicious actors\nIdentify weaknesses and strengths in the funding strategy of OceanDAO\nTrack projects in the whole Ocean Ecosystem\nto give them a platform to present updates and announcements\nto provide users insights into what is out there and what is just marketing hype\nSupport the Ocean Protocol ecosystem\nby providing an overview and insights based on data from the community\nFurther, the outreach of Ocean Protocol\nfor new users who want to get a first impression\nfor news pages who want to keep track of the development in the Ocean Protocol ecosystem\nfor active users who do not want to participate in time-consuming community meetings but still would like to use their tokens to vote e.g. or participate and support projects\nbusinesses who want to use Ocean Protocol\nPromoting best practices throughout the Ocean Community how an OceanDAO project can succeed \ncompletely open-source\nall processes are transparent and our groups are accessible\nresponsible management of the funding\n", // [String||Markdown] Describe final product (max 4096 chars)
+  "valueAdded": "While the Ocean ecosystem is growing, it is difficult to keep track of all the developments, announcements, events, and conversations. This is especially evident when you look at a subset of the Ocean ecosystem: oceanDAO.\nIt is almost impossible to keep track of all proposals, deliverables, progress, and impact on the ecosystem. Users who want to vote also need to touch several platforms to inform themselves (Github, port, vote). As a project owner, you have to write a new proposal based on a text template which is not ideal as formatting differences make it very difficult for automated software to extract the relevant information from a proposal. \nOpportunity:\nGet a (quick) overview of the projects in the Ocean ecosystem via an easy to use web app\nA community-initiated project as a foundation for a decentralized OceanDAO\nImprove transparency of (funded) projects\nCreate guidelines for (future) OceanDAO proposals for better comparability between projects/proposals\nGive more people with a non-tech background the opportunity to overview current developments.\nBuild the foundation for a place to get a high-level overview of the health and diversity of the Ocean ecosystem\nStandardized, clean data through an API for third parties \nKeep up with new proposals in the OceanDAO\nCheck if OceanDAO projects delivered what they promised\nTrack the progress of funded projects\nA quick way to find exciting projects (to contribute to)\nAggregate Ocean Protocol content into one platform\n", // [String||Markdown] How will your project provide value? (max chars 4096)
+  "links": { // <Optional>
+    "website": "https://oceanpearl.io",
+    "twitter": "https://twitter.com/oceanpearlio",
+    "figma": "https://www.figma.com/file/7dtPoxdTarwvlPXOPPg4UO/Ocean-Pearl",
+    "discord": "https://discord.gg/eswpj8qzrh",
+    "github": "https://github.com/ocean-tech-ship",
+    "linkedin": "https://www.linkedin.com/company/oceanpearl",
+  },
+  "team": [ // Specify at least one, a project lead must be specified. See affiliation property
+    {
+      "name": "Sebastian Abromeit",
+      "role": ["Core Developer"],
+      "affiliation": "projectLead",
+      "linksAndContact": {
+        "discord": "abrom8#8580",
+        "linkedin": "https://linkedin.com/in/abromeit/"
+      },
+      "country": "Germany"
+    },
+    {
+      "name": "Moritz Murauer",
+      "role": ["Head of Design", "Core Developer"],
+      "affiliation": "coreMember",
+      "linksAndContact": {
+        "discord": "MoritzMurauer | OceanPearl#9225",
+        "linkedin": "https://www.linkedin.com/in/moritz-murauer-9b8001200/"
+      },
+      "country": "Germany"
+    },
+    {
+      "name": "Brian Böhm",
+      "role": ["Core Developer"],
+      "affiliation": "coreMember",
+      "linksAndContact": {
+        "discord": "Zuckerwattederivat#2657",
+        "linkedin": "https://www.linkedin.com/in/brianbhm/"
+      },
+      "country": "Germany"
+    },
+    {
+      "name": "Dominik Nolte",
+      "role": ["Core Developer"],
+      "affiliation": "coreMember",
+      "linksAndContact": {
+        "discord": "Maka#7957",
+        "linkedin": "https://www.linkedin.com/in/dominik-nolte/"
+      },
+      "country": "Germany"
+    },
+    {
+      "name": "Marcel Haßlinger",
+      "role": ["Core Developer"],
+      "affiliation": "coreMember",
+      "linksAndContact": {
+        "discord": "marhali#6965",
+        "linkedin": "https://www.linkedin.com/in/marcel-hasslinger/"
+      },
+      "country": "Germany"
+    }
+  ],
+  "previouslyReceivedGrant": true, // [Boolean] Any received grants in the past
+  "previouslyReceivedGrantDetails": "Round 5,7,9 and 11", // <Optional, Required if previouslyReceivedGrant is true>[String] List previous grants (max 512 chars)
+  "requestedFunding": 20000, // [Integer||Float] Amount of requested funding in USD
+  "details": "Currently the number of proposals for the monthly oceanDAO fundings is constantly increasing and it is almost impossible to track the progress of all (funded) projects. This is the reason why Ocean Pearl was created.\nOcean Pearl is the first product that was initiated by the Ocean Tech Ship. The Ocean Tech Ship focuses on identifying problems that block the growth of the Ocean ecosystem. Ocean Pearl has become independent, but will continue working with the tech ship.\nAdditionally we are working closely together with the oceanDAO to align our goals to improve the general experience for everyone since the early adopters of Ocean Pearl will be the OceanDAO community.\nThe Ocean Pearl members have a strong background in web development and are dedicated to building the project for the long run.\nAfter the current MVP release we are especially working on enhancing the user experience and improving data quality. We want to establish Ocean Pearl as the key tool for exploring the Ocean Protocol ecosystem.\n", // [String||Markdown] Detailed description (max chars 4096 chars)
+  "proposalDependentDetails": {
+    "dao": { // Required if category is dao
+      "collaborationConsent": true, // [Boolean] We commit to collaborating closely with OceanDAO core team
+      "publishConsent": true, // [Boolean] We commit to making all improved DAO tools publicly available
+    },
+    "proposalIncludesSoftware": { // Required if project includes software
+      "mockupsAndDesigns": "Figma: https://www.figma.com/file/7dtPoxdTarwvlPXOPPg4UO/Ocean-Pearl\nGithub: https://github.com/ocean-tech-ship", // <Optional>[String||Markdown] Are there any mockups or designs to date? If yes, please share details / links. (max 4096 chars)
+      "techStack": "Nuxt.js, NestJS", // [String||Markdown] Please given an overview of the technology stack. (max 1024 chars)
+    },
+    "includesCommunityEngagement": { // Required if project includes community engagement
+      "details": "Managed Twitter account with regular updates on the progress of Ocean Pearl. See @oceanpearlio", // [String||Markdown] Which channels will be used? For how long? Other details? (max chars 2048)
+    },
+  },
+  "roadmap": [ // <Optional>
+    {
+      "date": "2023-12-24", // <Optional>[String||Date] Specify when you plan to achieve this milestone
+      "milestoneDetails": "Bullet points...", // [String||Markdown] Short milestone explanation (max chars 1024)
+    }
+  ],
+  "additionalInformation": "0-4 paragraphs", // <Optional>[String||Markdown] Custom fields, images other grants (max 4096 chars)
+}
